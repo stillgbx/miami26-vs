@@ -5,8 +5,8 @@
 
 Miami colors for Visual Studio 2019, 2022 and 2026. Two palettes, each in a dark and a light version:
 
-* **Bay**: a day on the bay. Turquoise water, sky blue, lavender towers, pink facades and warm sand.
-* **Sunset**: dusk on the ocean front. Magenta, sunset orange, gold and periwinkle buildings under a violet sky.
+* **Bay**: a day on the bay. Sky blue, turquoise water, lavender palm trees, peach facades and warm sand.
+* **Sunset**: dusk on the ocean front. Magenta, peach and pale gold under a periwinkle and lavender sky, with plum palm trees.
 
 | | Dark | Light |
 | --- | --- | --- |
@@ -33,16 +33,16 @@ Miami colors for Visual Studio 2019, 2022 and 2026. Two palettes, each in a dark
 
 | Role | Bay | Bay Light | Sunset | Sunset Light |
 | --- | --- | --- | --- | --- |
-| Frame | `#07131D` | `#BBDBE9` | `#0D0A1C` | `#E3C5DE` |
-| Editor | `#0C1B26` | `#E3F2F2` | `#15112A` | `#FBECE4` |
-| Status bar | `#13897F` | `#0B7F75` | `#D6337F` | `#C2186A` |
-| Keywords | `#2ED3C6` | `#0A7A70` | `#FF4FA3` | `#BD1766` |
-| Types | `#B9A6FF` | `#5E45C4` | `#A9B4F5` | `#434BB5` |
-| Functions | `#7CC4FF` | `#1C65AD` | `#FFA45C` | `#B5561A` |
-| Strings | `#FFC98F` | `#A3561A` | `#FFD27F` | `#845A00` |
-| Numbers, constants | `#FF9CC2` | `#BF2F68` | `#FF7A6B` | `#C9392A` |
-| Tags, preprocessor | `#7EDC9E` | `#2A7F47` | `#D39BFF` | `#7235AD` |
-| Comments | `#557489` | `#5F7F8C` | `#7C6FA3` | `#87718F` |
+| Frame | `#0B1626` | `#A6CBE8` | `#160E24` | `#C9B9EA` |
+| Editor | `#102230` | `#FBF3E6` | `#231833` | `#FDEBDB` |
+| Status bar | `#6763C2` | `#6B67C2` | `#F5A872` | `#7E4B87` |
+| Keywords | `#7FD8C8` | `#0E7A74` | `#FF5FAA` | `#BE1F70` |
+| Types | `#A9A6F0` | `#5853B5` | `#A9B4F5` | `#4A56B8` |
+| Functions | `#8EC6EC` | `#23689E` | `#FFB27A` | `#A64F18` |
+| Strings | `#F3DDB0` | `#B04F2A` | `#F6E2A2` | `#7F5E00` |
+| Numbers, constants | `#F2A0B4` | `#C2386C` | `#FF8A7A` | `#B83A28` |
+| Tags, preprocessor | `#F5B49C` | `#9C3F8A` | `#D6A2F2` | `#7A3D8C` |
+| Comments | `#64799C` | `#7380AA` | `#8C72A8` | `#8E7299` |
 
 ## Install
 

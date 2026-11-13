@@ -1,7 +1,7 @@
 """Generate the four Miami '26 themes: two palettes, each in a dark and a light version.
 
-* Bay: a day on the bay. Turquoise water, sky blue, lavender towers, pink facades, warm sand.
-* Sunset: dusk on the ocean front. Magenta, sunset orange, gold, periwinkle buildings, violet sky.
+* Bay: a day on the bay. Sky blue, turquoise water, lavender palm trees, peach facades, warm sand.
+* Sunset: dusk on the ocean front. Magenta, peach, pale gold, periwinkle and lavender sky, plum palm trees.
 
 The dark versions are built on tools/base-dark.xml, the environment of SynthWave '84
 (github.com/stillgbx/synthwave-vs). The light versions are built on tools/base-light.xml, the
@@ -193,24 +193,26 @@ BAY = {
     'base': 'dark',
     'glow': True,
     # adapt(): greys take this hue and saturation
-    'neutral': (200, 0.16),
+    'neutral': (205, 0.20),
+    # The bay at nightfall: a lilac blue sky, deep water, lavender palm trees on the status bar,
+    # peach facades in the selection and pastel tokens.
     'colors': {
-        'bg0': '07131D', 'bg1': '0C1B26', 'bg2': '10222F', 'bg3': '163040',
-        'menu': '13293A', 'thumb': '2C4A5E', 'raised': '2F5266', 'pressed': '1E5A66',
-        'muted': '3F5869', 'dim': '4E7186', 'text': 'E8F4F6',
-        'accent': '17A398', 'selection': '13897F', 'accent_hover': '6FE6DC', 'accent_hot': '1FB5A9',
-        'accent_soft': '93EDE5', 'heading': 'FFC98F',
-        'secondary': '5B4FA8', 'secondary_light': 'B8A6F0', 'secondary_mid': '8C7AD6', 'secondary_dark': '3B3378',
-        'tertiary': 'B04D78', 'tertiary_light': 'F2A7C3', 'warm': 'FF9E7A',
-        'status': '13897F', 'status_text': 'FFFFFF', 'status_dark_text': '07131D',
-        'editor': '0C1B26', 'editor_selection': '1E4A5C', 'editor_inactive_selection': '17323F',
-        'line_number': '4E7186', 'caret': '2ED3C6', 'caret_secondary': 'FF9CC2', 'current_line': '163040',
-        'highlight': '2E3A66',
+        'bg0': '0B1626', 'bg1': '0F2A30', 'bg2': '1C2747', 'bg3': '1F3448',
+        'menu': '1A2D44', 'thumb': '345068', 'raised': '37506A', 'pressed': '2A4A60',
+        'muted': '46607A', 'dim': '5F7C9A', 'text': 'EAF4F2',
+        'accent': '2FA394', 'selection': '2FA394', 'accent_hover': '7FE0D2', 'accent_hot': '4CCFC0',
+        'accent_soft': '9FE8DC', 'heading': 'F5B89C',
+        'secondary': '6E6AC8', 'secondary_light': 'B5B2F0', 'secondary_mid': '908CE0', 'secondary_dark': '4A4790',
+        'tertiary': 'B4607E', 'tertiary_light': 'F2A6B4', 'warm': 'F5B095',
+        'status': '6763C2', 'status_text': 'FFFFFF', 'status_dark_text': '0B1626',
+        'editor': '102230', 'editor_selection': '5A4048', 'editor_inactive_selection': '33333F',
+        'line_number': '5F7C9A', 'caret': '7FD8C8', 'caret_secondary': 'F2A6B4', 'current_line': '17303C',
+        'highlight': '33335E',
     },
     'tokens': {
-        'keyword': '2ED3C6', 'type': 'B9A6FF', 'function': '7CC4FF', 'tag': '7EDC9E', 'variable': 'DCEBF5',
-        'operator': '8FE9E1', 'attribute': '8CCBFF', 'string': 'FFC98F', 'constant': 'FF9CC2',
-        'comment': '557489', 'escape': 'FF8FB8',
+        'keyword': '7FD8C8', 'type': 'A9A6F0', 'function': '8EC6EC', 'tag': 'F5B49C', 'variable': 'E2EEF2',
+        'operator': '9FE3D6', 'attribute': '9CCBEA', 'string': 'F3DDB0', 'constant': 'F2A0B4',
+        'comment': '64799C', 'escape': 'F0A0C8',
     },
 }
 
@@ -220,23 +222,24 @@ BAY_LIGHT = {
     'guid': '{ced9de59-6bf5-42c3-9f2d-d5c323ab90a9}',
     'base': 'light',
     'glow': False,
-    # adapt(): the whites and greys of the base, by lightness. The sky blue frame fades to the pale water of the editor.
-    'ramp': [(1.00, 'E3F2F2'), (0.975, 'D7ECF0'), (0.955, 'C8E3EC'), (0.93, 'B9DAE8'), (0.86, 'A2CADB'),
-             (0.80, '8DB8CB'), (0.55, '5A8090'), (0.42, '45697A'), (0.12, '17323F'), (0.00, '0B2230')],
+    # adapt(): the whites and greys of the base, by lightness. A sky blue frame, mint water panels and a sand
+    # editor; lavender palm trees on the status bar and peach facades in the selection.
+    'ramp': [(1.00, 'FBF3E6'), (0.975, 'D3EEE8'), (0.955, 'BFE3E2'), (0.93, 'A6CBE8'), (0.86, '93B8DC'),
+             (0.80, '80AFC8'), (0.55, '58789A'), (0.42, '45627E'), (0.12, '1B3245'), (0.00, '0E2233')],
     'colors': {
-        'text': '17323F',
-        'accent': '0B7F75', 'accent_dark': '08665E', 'accent_darker': '06564F', 'accent_hover': '12A092',
-        'accent_soft': '5CC8BE', 'selection': '0E8E83', 'accent_pale': 'B6E2DE', 'accent_wash': 'D6EFEE',
-        'secondary': '5E45C4', 'tertiary': '6A55C8', 'tertiary_light': '9583E0', 'warm': 'F08A5D',
-        'status': '0B7F75', 'status_text': 'FFFFFF', 'status_dark_text': '17323F',
-        'editor': 'E3F2F2', 'editor_selection': 'B2E0DA', 'editor_inactive_selection': 'CFE7E8',
-        'line_number': '6E95A3', 'caret': '0B7F75', 'caret_secondary': 'BF2F68', 'current_line': 'C9E4E6',
-        'highlight': 'D6CDF0',
+        'text': '1B3245',
+        'accent': '128079', 'accent_dark': '0E6A64', 'accent_darker': '0B5853', 'accent_hover': '1BA096',
+        'accent_soft': '5FCFC2', 'selection': '17958B', 'accent_pale': 'B4E6DE', 'accent_wash': 'D5F1EC',
+        'secondary': '6B67C2', 'tertiary': '7A76CC', 'tertiary_light': 'A9A6E8', 'warm': 'F4AE92',
+        'status': '6B67C2', 'status_text': 'FFFFFF', 'status_dark_text': '1B3245',
+        'editor': 'FBF3E6', 'editor_selection': 'F7CDBB', 'editor_inactive_selection': 'F2DFD2',
+        'line_number': '7A93AE', 'caret': '128079', 'caret_secondary': 'C2416E', 'current_line': 'F2E6D3',
+        'highlight': 'DCD9F6',
     },
     'tokens': {
-        'keyword': '0A7A70', 'type': '5E45C4', 'function': '1C65AD', 'tag': '2A7F47', 'variable': '22394D',
-        'operator': '2F7F79', 'attribute': '1C65AD', 'string': 'A3561A', 'constant': 'BF2F68',
-        'comment': '5F7F8C', 'escape': 'BF2F68',
+        'keyword': '0E7A74', 'type': '5853B5', 'function': '23689E', 'tag': '9C3F8A', 'variable': '1F3A50',
+        'operator': '2A7579', 'attribute': '23689E', 'string': 'B04F2A', 'constant': 'C2386C',
+        'comment': '7380AA', 'escape': 'C2386C',
     },
 }
 
@@ -246,24 +249,26 @@ SUNSET = {
     'guid': '{28fd2755-b519-4c54-aafb-3e1603f5bb44}',
     'base': 'dark',
     'glow': True,
-    'neutral': (250, 0.18),
+    'neutral': (285, 0.24),
+    # Dusk on the ocean front: a periwinkle night sky, plum palm trees, a peach horizon on the status bar
+    # and a magenta accent.
     'colors': {
-        'bg0': '0D0A1C', 'bg1': '15112A', 'bg2': '1B1634', 'bg3': '241D42',
-        'menu': '2A2152', 'thumb': '41386E', 'raised': '4A3F7A', 'pressed': '5A2350',
-        'muted': '504A73', 'dim': '62598F', 'text': 'F6EEF6',
-        'accent': 'FF4FA3', 'selection': 'D93A86', 'accent_hover': 'FF85BF', 'accent_hot': 'FF6FB0',
-        'accent_soft': 'FF9CCB', 'heading': 'FFC27A',
-        'secondary': '5A5FC8', 'secondary_light': 'A9B4F5', 'secondary_mid': '8E8FE0', 'secondary_dark': '3A3D8F',
-        'tertiary': 'C9612A', 'tertiary_light': 'FFA45C', 'warm': 'FF7A5C',
-        'status': 'D6337F', 'status_text': 'FFFFFF', 'status_dark_text': '0D0A1C',
-        'editor': '15112A', 'editor_selection': '4A2A6A', 'editor_inactive_selection': '2E2850',
-        'line_number': '62598F', 'caret': 'FF4FA3', 'caret_secondary': 'FFA45C', 'current_line': '241D42',
-        'highlight': '3A3270',
+        'bg0': '160E24', 'bg1': '2A1A3E', 'bg2': '211B45', 'bg3': '33244C',
+        'menu': '3A2A58', 'thumb': '503C70', 'raised': '5A447E', 'pressed': '6A2A5E',
+        'muted': '5E4C7C', 'dim': '7E6A9C', 'text': 'F8EEF4',
+        'accent': 'FF5FAA', 'selection': 'D9408A', 'accent_hover': 'FF8CC2', 'accent_hot': 'FF74B6',
+        'accent_soft': 'FFA6CF', 'heading': 'FFC08A',
+        'secondary': '6C78D8', 'secondary_light': 'A9B4F5', 'secondary_mid': '8E96E8', 'secondary_dark': '424A9C',
+        'tertiary': 'C9662E', 'tertiary_light': 'FFB27A', 'warm': 'FF7A8A',
+        'status': 'F5A872', 'status_text': '1E1430', 'status_dark_text': '1E1430',
+        'editor': '231833', 'editor_selection': '5A2F62', 'editor_inactive_selection': '3A2A4E',
+        'line_number': '7E6A9C', 'caret': 'FF5FAA', 'caret_secondary': 'FFB27A', 'current_line': '2E2042',
+        'highlight': '3E3470',
     },
     'tokens': {
-        'keyword': 'FF4FA3', 'type': 'A9B4F5', 'function': 'FFA45C', 'tag': 'D39BFF', 'variable': 'F3DDF0',
-        'operator': 'FF8FC4', 'attribute': 'FFB070', 'string': 'FFD27F', 'constant': 'FF7A6B',
-        'comment': '7C6FA3', 'escape': '8E9BFF',
+        'keyword': 'FF5FAA', 'type': 'A9B4F5', 'function': 'FFB27A', 'tag': 'D6A2F2', 'variable': 'F6E2EE',
+        'operator': 'FF9CC8', 'attribute': 'FFBC8A', 'string': 'F6E2A2', 'constant': 'FF8A7A',
+        'comment': '8C72A8', 'escape': '9AA6FF',
     },
 }
 
@@ -273,23 +278,24 @@ SUNSET_LIGHT = {
     'guid': '{7f2e1cab-c836-4ff1-8ffd-dc2f89c11942}',
     'base': 'light',
     'glow': False,
-    # The sky at dusk: a lavender frame, pink panels and a peach editor.
-    'ramp': [(1.00, 'FBECE4'), (0.975, 'F4DDE4'), (0.955, 'EDD0E0'), (0.93, 'E2C3DE'), (0.86, 'D3AFD0'),
-             (0.80, 'C69FC4'), (0.55, '91708F'), (0.42, '74566F'), (0.12, '2E1A3D'), (0.00, '1E0F2A')],
+    # The sky at dusk, from top to bottom: a periwinkle and lavender frame, pink panels and a peach editor;
+    # plum palm trees on the status bar.
+    'ramp': [(1.00, 'FDEBDB'), (0.975, 'F8D8E1'), (0.955, 'EECBE3'), (0.93, 'C9B9EA'), (0.86, 'AFA6E0'),
+             (0.80, '9C96D6'), (0.55, '85709A'), (0.42, '6C5277'), (0.12, '2E1A3D'), (0.00, '1E0F2A')],
     'colors': {
         'text': '2E1A3D',
-        'accent': 'C2186A', 'accent_dark': 'A3195B', 'accent_darker': '8A154D', 'accent_hover': 'DB2F86',
-        'accent_soft': 'F07AB3', 'selection': 'CF2C7C', 'accent_pale': 'F2C3D6', 'accent_wash': 'F7DCE6',
-        'secondary': 'B5561A', 'tertiary': '4D55C0', 'tertiary_light': '7F86E0', 'warm': 'F2994A',
-        'status': 'C2186A', 'status_text': 'FFFFFF', 'status_dark_text': '2E1A3D',
-        'editor': 'FBECE4', 'editor_selection': 'F2C3D6', 'editor_inactive_selection': 'EED9E3',
-        'line_number': '9C7C96', 'caret': 'C2186A', 'caret_secondary': '434BB5', 'current_line': 'EFD6D8',
-        'highlight': 'DDD7F5',
+        'accent': 'C8287A', 'accent_dark': 'A61F64', 'accent_darker': '8A1A53', 'accent_hover': 'DE3E8E',
+        'accent_soft': 'F08CBC', 'selection': 'D23A86', 'accent_pale': 'F6C2D8', 'accent_wash': 'FADCE6',
+        'secondary': 'C2601F', 'tertiary': '5662C4', 'tertiary_light': '8E97E6', 'warm': 'F6A56E',
+        'status': '7E4B87', 'status_text': 'FFFFFF', 'status_dark_text': '2E1A3D',
+        'editor': 'FDEBDB', 'editor_selection': 'F6C4D8', 'editor_inactive_selection': 'F2D9E2',
+        'line_number': '9A82A6', 'caret': 'C8287A', 'caret_secondary': '5662C4', 'current_line': 'F9DDD3',
+        'highlight': 'DAD6F6',
     },
     'tokens': {
-        'keyword': 'BD1766', 'type': '434BB5', 'function': 'B5561A', 'tag': '7235AD', 'variable': '35203F',
-        'operator': 'A62A66', 'attribute': 'A94E17', 'string': '845A00', 'constant': 'C9392A',
-        'comment': '87718F', 'escape': '434BB5',
+        'keyword': 'BE1F70', 'type': '4A56B8', 'function': 'A64F18', 'tag': '7A3D8C', 'variable': '35203F',
+        'operator': 'A3306E', 'attribute': 'A9521C', 'string': '7F5E00', 'constant': 'B83A28',
+        'comment': '8E7299', 'escape': '4A56B8',
     },
 }
 

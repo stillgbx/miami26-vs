@@ -33,18 +33,18 @@ namespace Miami26VS.Glow
         private static readonly Dictionary<Color, GlowShadow[]> Shadows = new Dictionary<Color, GlowShadow[]>
         {
             // Miami '26 Bay
-            [Rgb(0x2ED3C6)] = new[] { Dark(2, 0x041210), Neon(4, 0x00E5D4), Neon(10, 0x00E5D4) },   // Keywords: turquoise
-            [Rgb(0xB9A6FF)] = new[] { Dark(2, 0x0E0A1F), Neon(4, 0x8C6CFF), Neon(10, 0x8C6CFF) },   // Types: lavender
-            [Rgb(0x7CC4FF)] = new[] { Dark(2, 0x04101F), Neon(3, 0x2E9BFF), Neon(8, 0x2E9BFF) },    // Functions: sky
-            [Rgb(0x7EDC9E)] = new[] { Dark(2, 0x0C100C), Neon(8, 0x2FB86A), Neon(24, 0x1E3A2A) },   // Tags: palm green
-            [Rgb(0xDCEBF5)] = new[] { Dark(2, 0x0C1B26), Fixed(5, 0x33, 0x7CC4FF), Fixed(10, 0x22, 0xFFFFFF) }, // Variables
+            [Rgb(0x7FD8C8)] = new[] { Dark(2, 0x041210), Neon(4, 0x2EE0C8), Neon(10, 0x2EE0C8) },   // Keywords: aqua
+            [Rgb(0xA9A6F0)] = new[] { Dark(2, 0x0E0A1F), Neon(4, 0x7C74FF), Neon(10, 0x7C74FF) },   // Types: lavender
+            [Rgb(0x8EC6EC)] = new[] { Dark(2, 0x04101F), Neon(3, 0x3AA6F0), Neon(8, 0x3AA6F0) },    // Functions: sky
+            [Rgb(0xF5B49C)] = new[] { Dark(2, 0x1A0E08), Neon(6, 0xFF8A5C), Neon(18, 0x3A2420) },   // Tags: peach
+            [Rgb(0xE2EEF2)] = new[] { Dark(2, 0x102230), Fixed(5, 0x33, 0x8EC6EC), Fixed(10, 0x22, 0xFFFFFF) }, // Variables
 
             // Miami '26 Sunset
-            [Rgb(0xFF4FA3)] = new[] { Dark(2, 0x2A0A1A), Neon(4, 0xFF2E93), Neon(10, 0xFF2E93) },   // Keywords: magenta
+            [Rgb(0xFF5FAA)] = new[] { Dark(2, 0x2A0A1A), Neon(4, 0xFF2E93), Neon(10, 0xFF2E93) },   // Keywords: magenta
             [Rgb(0xA9B4F5)] = new[] { Dark(2, 0x0A0C24), Neon(4, 0x6F7BFF), Neon(10, 0x6F7BFF) },   // Types: periwinkle
-            [Rgb(0xFFA45C)] = new[] { Dark(2, 0x1A0E00), Neon(3, 0xFF7A1F), Neon(8, 0xFF7A1F) },    // Functions: sunset orange
-            [Rgb(0xD39BFF)] = new[] { Dark(2, 0x120A1C), Neon(8, 0xA44CFF), Neon(24, 0x2A1A3A) },   // Tags: violet
-            [Rgb(0xF3DDF0)] = new[] { Dark(2, 0x15112A), Fixed(5, 0x33, 0xFF4FA3), Fixed(10, 0x22, 0xFFFFFF) }, // Variables
+            [Rgb(0xFFB27A)] = new[] { Dark(2, 0x1A0E00), Neon(3, 0xFF7A1F), Neon(8, 0xFF7A1F) },    // Functions: peach
+            [Rgb(0xD6A2F2)] = new[] { Dark(2, 0x120A1C), Neon(8, 0xA44CFF), Neon(24, 0x2A1A3A) },   // Tags: lilac
+            [Rgb(0xF6E2EE)] = new[] { Dark(2, 0x231833), Fixed(5, 0x33, 0xFF5FAA), Fixed(10, 0x22, 0xFFFFFF) }, // Variables
         };
 
         public static bool TryGetShadows(Color text, out GlowShadow[] shadows) =>

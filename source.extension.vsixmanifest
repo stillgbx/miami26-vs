@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Miami26-VS.2588a1d8-6df2-4c90-b9b6-49ae489660cf" Version="1.0" Language="en-US" Publisher="stillgbx" />
+        <Identity Id="Miami26-VS.2588a1d8-6df2-4c90-b9b6-49ae489660cf" Version="1.1" Language="en-US" Publisher="stillgbx" />
         <DisplayName>Miami '26 Theme</DisplayName>
         <Description xml:space="preserve">Miami colors for Visual Studio 2019, 2022 and 2026. Two palettes, Bay (turquoise water, sky blue, lavender towers) and Sunset (magenta, sunset orange, gold, periwinkle), each in a dark and a light version. The dark versions come with an optional neon glow.</Description>
         <MoreInfo>https://github.com/stillgbx/miami26-vs</MoreInfo>
