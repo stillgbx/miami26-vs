@@ -7,7 +7,7 @@
         <MoreInfo>https://github.com/stillgbx/miami26-vs</MoreInfo>
         <License>LICENSE.md</License>
         <Icon>Preview\icon.png</Icon>
-        <Tags>theme;miami;neon;sunset;retro;dark;light;color theme</Tags>
+        <Tags>theme;color theme;dark;light;miami;neon;sunset;pastel;tropical;ocean</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
